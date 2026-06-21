@@ -32,6 +32,7 @@
       <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
       <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
       <li><a href="#getting-started" class="nav-link">Get Started</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
       <li><a href="https://github.com/Shrawan13-glitch/kino" target="_blank" rel="noopener" class="nav-link nav-link--github">
         <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         GitHub
@@ -252,6 +253,132 @@ flutter run</code></pre>
       <a href="https://github.com/Shrawan13-glitch/kino/blob/main/README.md" target="_blank" rel="noopener" class="btn btn--ghost">
         Read the Docs
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Got questions? We've got answers. If you can't find what you're looking for, feel free to open an issue on GitHub.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item" data-aos="fade-up">
+        <button class="faq-question" aria-expanded="false">
+          <span>Why do I get errors when I send a message?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>This shouldn't happen under normal circumstances. The most common cause is using a model that doesn't support tool calling. Make sure you are using a model that supports tool/function calling. If you're using a free model, we recommend using <strong>OWL Alpha</strong>, <strong>gpt-oss-120b</strong>, or <strong>gpt-oss-20b</strong> as they have high availability and full tool calling support.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can I fork and build my own version of Kino?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, absolutely! Kino is open-source and you are free to fork and build your own version. However, please make sure you comply with the <strong>GPL-3.0 license</strong>. This means you must keep your derivative version open-source and license it under GPL-3.0 as well. See the <a href="https://github.com/Shrawan13-glitch/kino/blob/main/LICENSE" target="_blank" rel="noopener">LICENSE</a> file for full details.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+        <button class="faq-question" aria-expanded="false">
+          <span>What LLM providers does Kino support?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Kino supports any LLM provider compatible with the OpenAI API format. We recommend <a href="https://openrouter.ai" target="_blank" rel="noopener">OpenRouter</a> as it gives you access to hundreds of models from a single API key. You can also use OpenAI, Anthropic (via compatible endpoints), or any local LLM server like Ollama or LM Studio.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is my API key safe? Does it leave my device?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Your API key is stored <strong>locally on your device</strong> using Android's secure storage mechanisms. It is never sent to any third-party server, never logged, and never shared. Kino communicates directly with your chosen LLM provider — there is no middleman. Your keys, your data, your control.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+        <button class="faq-question" aria-expanded="false">
+          <span>What can I do with Kino's GitHub integration?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Kino's GitHub integration lets you manage your entire development workflow through natural language. You can create and manage repositories, browse and edit files, create and review pull requests, manage issues, trigger and monitor GitHub Actions workflows, manage secrets and variables, and much more — all from a simple chat interface on your phone.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do I need a powerful phone to run Kino?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Not at all! Kino is built with Flutter and optimized for performance. The AI processing happens on the LLM provider's servers, not on your device. Any modern Android phone (Android 8.0+) with a decent internet connection will run Kino smoothly.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do I report bugs or request features?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>We'd love to hear from you! Please open an issue on our <a href="https://github.com/Shrawan13-glitch/kino/issues" target="_blank" rel="noopener">GitHub Issues</a> page. For bug reports, include your device model, Android version, the model you're using, and steps to reproduce. For feature requests, describe the use case and why it would be valuable.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is Kino free to use?</span>
+          <span class="faq-toggle-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Kino is <strong>completely free and open-source</strong> under the GPL-3.0 license. You only pay for the API usage from your chosen LLM provider. Many providers like OpenRouter offer free-tier models you can use to get started at no cost.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

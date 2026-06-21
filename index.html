@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kino — open-source Android AI agent with on-device tool calling. Bring your own API key and let AI agents manage repos, files, PRs, Actions, and more — all on your phone.">
+<meta name="keywords" content="Kino, AI agent, Android, open source, BYOK, tool calling, GitHub, LLM, Flutter">
+<meta name="author" content="Kino Team">
+<meta name="theme-color" content="#6C63FF">
+<meta property="og:title" content="Kino — Open-Source Android AI Agent">
+<meta property="og:description" content="BYOK AI chat app with on-device tool calling. Manage repos, files, PRs, Actions — all on your phone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shrawan13-glitch.github.io/kino-website/">
+<meta name="twitter:card" content="summary_large_image">
+<title>Kino — Open-Source Android AI Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">⚡</span>
+      <span class="logo-text">Kino</span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+      <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+      <li><a href="#getting-started" class="nav-link">Get Started</a></li>
+      <li><a href="https://github.com/Shrawan13-glitch/kino" target="_blank" rel="noopener" class="nav-link nav-link--github">
+        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-particles" id="particles"></div>
+  </div>
+  <div class="hero-container">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Open Source · GPL-3.0 Licensed
+    </div>
+    <h1 class="hero-title">
+      Your AI Agent,<br>
+      <span class="gradient-text">On Your Phone</span>
+    </h1>
+    <p class="hero-subtitle">
+      Kino is an open-source Android AI agent with on-device tool calling.
+      Bring your own API key and let AI manage repos, files, PRs, Actions — all from your pocket.
+    </p>
+    <div class="hero-cta">
+      <a href="https://github.com/Shrawan13-glitch/kino" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        View on GitHub
+      </a>
+      <a href="#getting-started" class="btn btn--ghost btn--lg">Get Started ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-value">100%</span><span class="stat-label">Open Source</span></div>
+      <div class="stat"><span class="stat-value">BYOK</span><span class="stat-label">Bring Your Own Key</span></div>
+      <div class="stat"><span class="stat-value">On-Device</span><span class="stat-label">Tool Calling</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <div class="mouse"><div class="wheel"></div></div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="section features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Features</span>
+      <h2 class="section-title">Powerful Capabilities</h2>
+      <p class="section-desc">Everything you need to manage your development workflow, right from your Android device.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" data-aos="fade-up">
+        <div class="feature-icon">🔧</div>
+        <h3>On-Device Tool Calling</h3>
+        <p>AI agents execute tools directly on your phone — no middleman server. Full control, full privacy.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-icon">🔑</div>
+        <h3>Bring Your Own Key</h3>
+        <p>Use your own API keys with OpenRouter or any compatible provider. You own your data, always.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-icon">📦</div>
+        <h3>GitHub Integration</h3>
+        <p>Manage repositories, files, pull requests, issues, and Actions workflows — all through natural conversation.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-icon">🤖</div>
+        <h3>Multi-Agent Support</h3>
+        <p>Chain multiple AI agents together for complex automation pipelines and sophisticated workflows.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-icon">🔒</div>
+        <h3>Privacy First</h3>
+        <p>Your API keys and credentials stay on your device. No telemetry, no tracking, no cloud dependency.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Built with Flutter for native performance. Smooth 60fps UI with instant response times.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">How It Works</span>
+      <h2 class="section-title">Three Simple Steps</h2>
+      <p class="section-desc">Get up and running in minutes, not hours.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Add Your API Key</h3>
+          <p>Get an API key from OpenRouter or your preferred LLM provider. Paste it into Kino's settings — it never leaves your device.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Connect Your GitHub</h3>
+          <p>Authenticate with your GitHub account. Kino uses secure OAuth tokens stored locally on your device.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Chat & Automate</h3>
+          <p>Start chatting with your AI agent. Ask it to create repos, review PRs, manage files, run Actions — all in natural language.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Screenshots Section -->
+<section class="section screenshots" id="screenshots">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Screenshots</span>
+      <h2 class="section-title">See Kino in Action</h2>
+      <p class="section-desc">A clean, modern interface designed for productivity.</p>
+    </div>
+    <div class="screenshot-showcase">
+      <div class="screenshot-mockup phone-mockup">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="chat-demo">
+              <div class="chat-header">
+                <div class="chat-dots"><span></span><span></span><span></span></div>
+                <span class="chat-title">Kino AI</span>
+              </div>
+              <div class="chat-messages">
+                <div class="msg msg-user">Create a new repo called my-project</div>
+                <div class="msg msg-agent">✅ Created repo <code>my-project</code> with README initialized. Want me to add a .gitignore?</div>
+                <div class="msg msg-user">Yes, use the Dart template</div>
+                <div class="msg msg-agent">✅ Added <code>.gitignore</code> with Dart template. Repo is ready!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screenshot-features">
+        <div class="screenshot-feature">
+          <div class="sf-icon">💬</div>
+          <div><h4>Natural Chat Interface</h4><p>Conversational AI that understands context and follows up intelligently.</p></div>
+        </div>
+        <div class="screenshot-feature">
+          <div class="sf-icon">📱</div>
+          <div><h4>Mobile-First Design</h4><p>Optimized for touch with gesture support and adaptive layouts.</p></div>
+        </div>
+        <div class="screenshot-feature">
+          <div class="sf-icon">🌙</div>
+          <div><h4>Dark Mode</h4><p>Easy on the eyes with automatic system theme detection.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack -->
+<section class="section tech-stack">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Tech Stack</span>
+      <h2 class="section-title">Built with Modern Technology</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item"><span class="tech-icon">🎯</span><span>Flutter</span></div>
+      <div class="tech-item"><span class="tech-icon">💙</span><span>Dart</span></div>
+      <div class="tech-item"><span class="tech-icon">🐙</span><span>GitHub API</span></div>
+      <div class="tech-item"><span class="tech-icon">🧠</span><span>OpenRouter</span></div>
+      <div class="tech-item"><span class="tech-icon">🔐</span><span>OAuth 2.0</span></div>
+      <div class="tech-item"><span class="tech-icon">📦</span><span>GPL-3.0</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Getting Started -->
+<section class="section getting-started" id="getting-started">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get Started</span>
+      <h2 class="section-title">Start Using Kino Today</h2>
+      <p class="section-desc">Clone, build, and run in under 5 minutes.</p>
+    </div>
+    <div class="install-steps">
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-dots"><span></span><span></span><span></span></span>
+          <span class="code-label">Terminal</span>
+        </div>
+        <pre><code><span class="comment"># Clone the repository</span>
+git clone https://github.com/Shrawan13-glitch/kino.git
+cd kino
+
+<span class="comment"># Install dependencies</span>
+flutter pub get
+
+<span class="comment"># Run the app</span>
+flutter run</code></pre>
+      </div>
+    </div>
+    <div class="cta-group">
+      <a href="https://github.com/Shrawan13-glitch/kino/releases" target="_blank" rel="noopener" class="btn btn--primary">
+        Download APK
+      </a>
+      <a href="https://github.com/Shrawan13-glitch/kino/blob/main/README.md" target="_blank" rel="noopener" class="btn btn--ghost">
+        Read the Docs
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Open Source -->
+<section class="section open-source">
+  <div class="container">
+    <div class="open-source-content">
+      <h2>Proudly <span class="gradient-text">Open Source</span></h2>
+      <p>Kino is free and open-source software licensed under GPL-3.0. We believe in transparency, community collaboration, and giving everyone the power of AI agents.</p>
+      <div class="open-source-links">
+        <a href="https://github.com/Shrawan13-glitch/kino" target="_blank" rel="noopener" class="btn btn--primary">
+          ⭐ Star on GitHub
+        </a>
+        <a href="https://github.com/Shrawan13-glitch/kino/issues" target="_blank" rel="noopener" class="btn btn--ghost">
+          Report an Issue
+        </a>
+        <a href="https://github.com/Shrawan13-glitch/kino/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn btn--ghost">
+          Contribute
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Kino</span>
+        <p>Open-source Android AI agent with on-device tool calling.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Project</h4>
+        <a href="https://github.com/Shrawan13-glitch/kino" target="_blank" rel="noopener">Repository</a>
+        <a href="https://github.com/Shrawan13-glitch/kino/releases" target="_blank" rel="noopener">Releases</a>
+        <a href="https://github.com/Shrawan13-glitch/kino/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+      </div>
+      <div class="footer-links">
+        <h4>Community</h4>
+        <a href="https://github.com/Shrawan13-glitch/kino/issues" target="_blank" rel="noopener">Issues</a>
+        <a href="https://github.com/Shrawan13-glitch/kino/discussions" target="_blank" rel="noopener">Discussions</a>
+        <a href="https://github.com/Shrawan13-glitch/kino/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="https://docs.flutter.dev" target="_blank" rel="noopener">Flutter Docs</a>
+        <a href="https://openrouter.ai" target="_blank" rel="noopener">OpenRouter</a>
+        <a href="https://docs.github.com/en/rest" target="_blank" rel="noopener">GitHub API</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Kino. Open source under GPL-3.0.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
